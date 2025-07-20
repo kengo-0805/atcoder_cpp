@@ -36,11 +36,12 @@ int main() {
     for (int i = 0; i < N; i++) {
       for (int j = 0; j < N; j++) {
         cout << result.at(i).at(j);
-        if (j != N){
+        if (j != N-1){
             cout << " ";
+        }else if (j == N-1){
+            cout << endl;
         }
       }
-      cout << endl;
     }
     return 0;
 }
