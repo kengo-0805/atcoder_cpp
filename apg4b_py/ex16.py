@@ -1,5 +1,7 @@
-n, k = (int(x) for x in input().split())
-s = input().split()
-# iの文字数がk以上の場合リストに入れる
-ans = (str(i) for i in s if len(i)>k)
-print(*ans)
+n, k = map(int, input().split())
+words = input().split()
+new_words = []
+for i in range(n):
+    if len(words[i]) >= k:
+        new_words.append(words[i])
+print(*new_words)
